@@ -1,93 +1,137 @@
 
 # Java Examples & Playground
 
-A compact collection of Java example programs and data-structure exercises organized for easy learning and experimentation. This workspace contains small, focused examples (arrays, data structures, exception handling, hashmap example, etc.) that you can compile and run locally using the JDK.
+A comprehensive collection of Java example programs organized for effective learning and reference. This workspace demonstrates various Java features, APIs, and programming patterns using JDK 21.
 
 ---
 
 ## Table of contents
 
-- [Project Snapshot](#project-snapshot)
-- [Repository layout](#repository-layout)
-- [How to build (Windows PowerShell)](#how-to-build-windows-powershell)
-- [Run an example](#run-an-example)
+- [Examples Overview](#examples-overview)
+- [Repository Structure](#repository-structure)
+- [Building and Running](#building-and-running)
 - [Contributing](#contributing)
 - [Notes & Tips](#notes--tips)
 
+## Examples Overview
+
+### Implemented Examples
+
+1. **Data Structures** (`DS/`)
+   - HashMap implementation with practical examples
+   - Demonstration of key data structure concepts
+
+2. **Exception Handling** (`ExceptionHandling/`)
+   - Custom exception implementation
+   - Try-with-resources pattern
+   - Exception chaining
+   - Best practices and patterns
+
+3. **Multithreading** (`Multithreading/`)
+   - Thread creation and management
+   - ExecutorService usage
+   - Synchronized operations
+   - CompletableFuture demonstrations
+   - Thread-safe programming
+
 ---
 
-## Project snapshot
+### Planned Examples
 
-- Language: Java (JDK required)
-- Purpose: Educational examples (arrays, data structures, exception handling, hashmap example)
-- Good for: learners practicing Java basics and core APIs
+- Stream API operations
+- Collections framework deep dive
+- Design patterns implementations
+- File I/O with NIO.2
+- Functional programming patterns
+- Optional API usage
+- Advanced generics
 
-## Repository layout
+## Repository Structure
 
 Top-level folders:
 
-- `src/` - Source code organized in subfolders (e.g., `Array/`, `DS/`, `Exception And Handeling/`, and example files like `Hashmapexample.java`).
-- `lib/` - External libraries (if any). Place third-party jars here and add them to the classpath when compiling/running.
-- `bin/` - Compiled .class files (output directory).
+- `DS/` - Data structure implementations and examples
+- `ExceptionHandling/` - Exception handling patterns and best practices
+- `Multithreading/` - Concurrency and parallel processing examples
 
-Example important files/folders you may see:
+Output directory:
+- `out/` - Compiled .class files (created during build)
 
-- `src/Array/` - array-related examples
-- `src/DS/` - data structure examples (includes `Hashmapexample.java`)
-- `src/Exception And Handeling/` - examples demonstrating try/catch and custom handling
+## Building and Running
 
-## How to build (Windows PowerShell)
+The project uses JDK 21 features and is configured to work seamlessly in GitHub Codespaces. Here's how to build and run the examples:
 
-Open PowerShell at the project root (where `src/`, `bin/` and `lib/` live). The following commands will compile the Java files and place .class files in `bin`.
+### Using GitHub Codespaces (Recommended)
 
-Compile all Java source files (simple, portable PowerShell loop):
+The development container is pre-configured with JDK 21 and all necessary tools.
 
-```powershell
-# create bin if missing
-if (-not (Test-Path -Path .\bin)) { New-Item -ItemType Directory -Path .\bin | Out-Null }
+```bash
+# Compile all Java files
+mkdir -p out
+javac -d out src/**/*.java
 
-# Compile every .java in src (outputs go to ./bin)
-Get-ChildItem -Path .\src -Recurse -Filter *.java | ForEach-Object { javac -d .\bin $_.FullName }
+# Run specific examples
+java -cp out ExceptionHandling.ExceptionHandlingDemo
+java -cp out Multithreading.MultithreadingDemo
+java -cp out DS.Hashmapexample
 ```
 
-If your examples require external jars in `lib/`, append `-cp` to javac, for example:
+### Running Specific Examples
 
-```powershell
-javac -d .\bin -cp .\lib\some-lib.jar <path-to-source>.java
-```
+Each example is organized in its own package. To run a specific example:
 
-## Run an example
+1. **Exception Handling Demo**:
+   ```bash
+   java -cp out ExceptionHandling.ExceptionHandlingDemo
+   ```
 
-After compilation, run a class with the JDK. If the class is in the default package, run:
+2. **Multithreading Demo**:
+   ```bash
+   java -cp out Multithreading.MultithreadingDemo
+   ```
 
-```powershell
-java -cp .\bin Hashmapexample
-```
-
-If the class is inside a package (for example `package DS;` in the source), use the fully-qualified name:
-
-```powershell
-java -cp .\bin DS.Hashmapexample
-```
-
-Tip: Look inside the `.java` file to see its `package` statement (first non-comment line) and use the matching package-qualified class name when running.
+3. **Data Structure Examples**:
+   ```bash
+   java -cp out DS.Hashmapexample
+   ```
 
 ## Contributing
 
-- Create small, focused examples.
-- Keep file and folder names clear (avoid spaces if possible; the project currently contains `Exception And Handeling` — consider renaming to `ExceptionAndHandling`).
-- Add short README or inline comments for each new example so others can run them quickly.
+1. **Code Organization**
+   - Create focused, single-purpose examples
+   - Follow standard Java package naming conventions
+   - Include clear documentation and comments
 
-## Notes & tips
+2. **Documentation**
+   - Add JavaDoc comments to public classes and methods
+   - Include example usage in class-level documentation
+   - Document any specific requirements or dependencies
 
-- Recommended JDK: Java 8+ (ensure `javac` and `java` are on your PATH).
-- Use your IDE (IntelliJ, Eclipse, or VS Code with Java extensions) to get a nicer edit/run experience.
-- If you prefer to compile everything at once, you can also use an IDE project or a build tool (Maven/Gradle) for larger exercises.
+3. **Testing**
+   - Test all examples thoroughly before submitting
+   - Include example input/output in comments
+   - Ensure compatibility with JDK 21
+
+## Notes & Tips
+
+- **Development Environment**:
+  - Using GitHub Codespaces is recommended (pre-configured)
+  - VS Code with Java extensions for the best experience
+  - JDK 21 features are available and encouraged
+
+- **Best Practices**:
+  - Follow Java coding conventions
+  - Use modern Java features where appropriate
+  - Include error handling in examples
+  - Document thread safety considerations
+
+- **Future Plans**:
+  - Maven/Gradle build system integration
+  - Automated tests for all examples
+  - CI/CD pipeline with GitHub Actions
+  - Comprehensive documentation site
 
 ---
 
-Happy learning — explore the `src/` folder, compile a small example, and run it from PowerShell! If you want, I can also:
-
-- add a small script to automate compile/run (PowerShell script), or
-- create a simple `build.bat`/`build.ps1` and `run.ps1` for common examples.
+Happy coding! Explore the examples, learn from the implementations, and feel free to contribute your own examples following the project's guidelines.
 

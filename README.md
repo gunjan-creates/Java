@@ -1,10 +1,46 @@
-Project: Java examples & playground
+````markdown
+# Java Examples & Playground
 
-This repository contains small Java example programs and data-structure exercises.
+This repository contains a comprehensive collection of Java example programs demonstrating various Java features, APIs, and best practices.
 
-Purpose of this file
+## Project Overview
 
-This README documents a recent maintenance session: upgrading the development environment to Java 21 and the problems we encountered while making that change permanent in GitHub Codespaces. It lists the problems, why they happened, and the concrete solutions applied so the fixes are reproducible.
+- **Java Version**: JDK 21 (Latest LTS)
+- **Development Environment**: GitHub Codespaces with VS Code
+- **Build System**: Direct compilation (Maven/Gradle integration planned)
+- **Purpose**: Educational examples and reference implementations
+
+## Implemented Examples
+
+1. **Data Structures** (`src/DS/`)
+   - HashMap implementation and usage patterns
+   - Custom data structure implementations
+
+2. **Exception Handling** (`src/ExceptionHandling/`)
+   - Comprehensive exception handling patterns
+   - Custom exceptions
+   - Try-with-resources
+   - Exception chaining
+   - Best practices for error handling
+
+3. **Multithreading** (`src/Multithreading/`)
+   - Basic thread creation (Thread & Runnable)
+   - ExecutorService and thread pools
+   - Synchronized blocks and thread safety
+   - CompletableFuture for async operations
+   - Atomic operations
+   - Thread-safe data structures
+
+## Upcoming Examples
+
+- Design Patterns (Factory, Builder, Observer)
+- File I/O operations with NIO.2
+- Advanced Collections and Generics
+- Functional Programming with Lambda
+- Stream API operations
+- Optional API usage patterns
+
+## Project History
 
 Problems & solutions
 
