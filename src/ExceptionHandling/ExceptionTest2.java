@@ -20,6 +20,7 @@ public class ExceptionTest2 {
             long Energy = Mass * SpeedOfLight * SpeedOfLight;
             System.out.println("The energy is: " + Energy + " Joules");
             System.out.println("This is the simple demostration of block finally for understanding its use. using the equeation of the conservation of mass and energy E=mc^2");
+            sc.close();
         }
     }
 }
