@@ -1,0 +1,16 @@
+{
+  "name": "Java 21 - Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-debug"
+      ]
+    }
+  },
+  "postCreateCommand": "java -version && javac -version",
+  "remoteUser": "vscode"
+}
