@@ -91,5 +91,3 @@ Happy learning — explore the `src/` folder, compile a small example, and run i
 - add a small script to automate compile/run (PowerShell script), or
 - create a simple `build.bat`/`build.ps1` and `run.ps1` for common examples.
 
-If you'd like those, tell me which example(s) you run most and I'll add the scripts.
-
