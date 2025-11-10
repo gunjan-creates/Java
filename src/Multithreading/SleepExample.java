@@ -8,6 +8,7 @@ public class SleepExample {
                 Thread.sleep(1000); // Pause for 1 second
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                // kind of exception 
             }
         }
     }
