@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package StringExceptionHandling;
 import java.util.Scanner;
     /** Question 1 — Divide by Zero Exception
     Write a program to divide two integers entered by the user. If the denominator is 0, handle the
