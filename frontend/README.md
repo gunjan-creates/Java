@@ -30,6 +30,12 @@ By default the server runs on <http://localhost:3000>. The UI lives in `public/`
 2. Configure the repository’s GitHub Pages settings to serve that branch and folder.
 3. The deployed site will automatically switch to GitHub API mode and surface the repo tree read-only.
 
+### Automated deployment via GitHub Actions
+
+- A workflow (`.github/workflows/deploy-frontend.yml`) publishes the static assets in `frontend/public/` to GitHub Pages whenever `main` is updated.
+- After merging the workflow, go to **Repository Settings → Pages**, set the **Source** to **GitHub Actions**, and Pages will pick up the workflow runs.
+- You can also trigger a manual deployment from the **Actions** tab using the **Deploy Frontend to GitHub Pages** workflow dispatch.
+
 > ℹ️ GitHub’s unauthenticated REST API rate limit is 60 requests per hour per IP. Heavy usage may require embedding a Personal Access Token during the build process or hosting behind your own backend.
 
 ## REST endpoints (local mode)
