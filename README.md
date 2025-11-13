@@ -15,6 +15,7 @@ This repository contains a comprehensive collection of **600+ Java example progr
 
 Each package contains exactly 100 beginner-friendly programs covering essential concepts:
 
+<<<<<<< HEAD
 ### 1. **Collections** (`src/Collections/`) - 100 Programs
    - ArrayList operations (add, remove, get, set, contains, etc.)
    - LinkedList and Deque operations
@@ -42,6 +43,7 @@ Each package contains exactly 100 beginner-friendly programs covering essential 
    - Try-with-resources
    - Best practices
    - [See detailed README](src/ExceptionHandelling/README.md)
+   - Legacy examples remain in `src/ExceptionHandling/` (note the spelling difference) including `ExceptionHandlingDemo.java`
 
 ### 4. **Multithreading** (`src/Multithreading/`) - 100 Programs
    - Thread creation (Thread class and Runnable)

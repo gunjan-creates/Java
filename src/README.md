@@ -21,11 +21,14 @@ A comprehensive collection of Java example programs organized for effective lear
    - HashMap implementation with practical examples
    - Demonstration of key data structure concepts
 
-2. **Exception Handling** (`ExceptionHandling/`)
-   - Custom exception implementation
-   - Try-with-resources pattern
-   - Exception chaining
-   - Best practices and patterns
+2. **Exception Handling**
+   - Folders in use: `ExceptionHandling/` and `ExceptionHandelling/`
+   - New programs in `ExceptionHandelling/`: EH01–EH10 covering:
+     - Try/catch basics, multiple catch, finally
+     - Throw and throws
+     - Custom checked/unchecked exceptions
+     - Try-with-resources and exception chaining
+     - Input validation patterns
 
 3. **Multithreading** (`Multithreading/`)
    - Thread creation and management
@@ -72,6 +75,7 @@ javac -d out src/**/*.java
 
 # Run specific examples
 java -cp out ExceptionHandling.ExceptionHandlingDemo
+java -cp out ExceptionHandelling.EH01_TryCatchBasics
 java -cp out Multithreading.MultithreadingDemo
 java -cp out DS.Hashmapexample
 ```
