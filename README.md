@@ -15,7 +15,6 @@ This repository contains a comprehensive collection of **600+ Java example progr
 
 Each package contains exactly 100 beginner-friendly programs covering essential concepts:
 
-<<<<<<< HEAD
 ### 1. **Collections** (`src/Collections/`) - 100 Programs
    - ArrayList operations (add, remove, get, set, contains, etc.)
    - LinkedList and Deque operations
@@ -121,6 +120,33 @@ make run CLASS=StringExceptionHandling.StringManupulationExample
 - **Topics Covered**: 50+
 - **All Programs**: ✅ Compile successfully
 - **All Programs**: ✅ Runnable with examples
+
+## GitHub Pages - Interactive Project Explorer
+
+This repository includes an interactive web-based project explorer deployed to GitHub Pages!
+
+🌐 **Visit the live site**: [https://gunjan-creates.github.io/Java/](https://gunjan-creates.github.io/Java/)
+
+### Features
+- **Browse Repository**: Navigate through all 600+ Java programs organized by package
+- **View Source Code**: Read any Java file directly in your browser
+- **Read-Only Mode**: Safe browsing without modifying the repository
+- **Responsive Design**: Works on desktop and mobile devices
+
+### How It Works
+The GitHub Pages site is automatically deployed when changes are pushed to the `main` branch. The deployment workflow:
+1. Copies the frontend files from `frontend/public/`
+2. Deploys them to GitHub Pages
+3. Makes the interactive explorer available at the GitHub Pages URL
+
+### Local Development
+To run the project explorer locally:
+```bash
+cd frontend
+npm install
+npm start
+```
+Then visit `http://localhost:3000` in your browser. In local mode, you can also edit files through the interface.
 
 ## Project History
 
