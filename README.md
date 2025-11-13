@@ -16,12 +16,12 @@ This repository contains a comprehensive collection of Java example programs dem
    - HashMap implementation and usage patterns
    - Custom data structure implementations
 
-2. **Exception Handling** (`src/ExceptionHandling/`)
-   - Comprehensive exception handling patterns
-   - Custom exceptions
-   - Try-with-resources
-   - Exception chaining
-   - Best practices for error handling
+2. **Exception Handling**
+   - Folders in use: `src/ExceptionHandling/` and `src/ExceptionHandelling/`
+   - Recently added (ExceptionHandelling): `EH01` to `EH10`
+     - Try/catch basics, multiple catch, finally, `throw`, `throws`,
+       custom checked/unchecked exceptions, try-with-resources, exception chaining, validation
+   - Previously added (ExceptionHandling): `ExceptionHandlingDemo.java`
 
 3. **Multithreading** (`src/Multithreading/`)
    - Basic thread creation (Thread & Runnable)
