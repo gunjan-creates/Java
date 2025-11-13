@@ -1,0 +1,14 @@
+package DS;
+
+/**
+ * Demonstrates mathematical operations - Example 26
+ */
+public class Program026 {
+    public static void main(String[] args) {
+        double x = 26.5;
+        System.out.println("Square root: " + Math.sqrt(x));
+        System.out.println("Power of 2: " + Math.pow(x, 2));
+        System.out.println("Ceiling: " + Math.ceil(x));
+        System.out.println("Floor: " + Math.floor(x));
+    }
+}
