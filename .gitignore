@@ -1,25 +1,28 @@
-# Compiled class files
-*.class
-out/
-bin/
+# Build outputs
+/out/
+/bin/
+/target/
+/build/
 
-# Package Files
+# Java
+*.class
+
+# Package archives
 *.jar
 *.war
 *.ear
 
-# IDE specific files
-.idea/
-*.iml
+# IDE/editor
+/.idea/
 .vscode/
+*.iml
+.classpath
+.project
+.settings/
 *.swp
 *.swo
 *~
 
-# OS specific files
+# OS
 .DS_Store
 Thumbs.db
-
-# Build artifacts
-target/
-build/
