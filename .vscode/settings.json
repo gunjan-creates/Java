@@ -9,5 +9,6 @@
     ],
     "editor.quickSuggestions": {
         "other": "off"
-    }
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }
