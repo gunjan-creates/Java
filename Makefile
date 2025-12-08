@@ -1,5 +1,5 @@
 # Simple Makefile to build and run examples with Java 21
-JAVA_HOME ?= $(HOME)/.jdk/jdk-21.0.8
+JAVA_HOME := $(HOME)/.jdk/jdk-21.0.8
 JAVAC := $(JAVA_HOME)/bin/javac
 JAVA := $(JAVA_HOME)/bin/java
 JAVA_SRC := $(shell find src -name "*.java")
