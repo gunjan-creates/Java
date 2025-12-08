@@ -4,7 +4,7 @@ interface Vehicle {
     void start();
 }
 
-abstract class Car implements Vehicle {
+abstract class AbstractCar implements Vehicle {
     abstract void fuelType();
 
     public void start() {
@@ -12,7 +12,7 @@ abstract class Car implements Vehicle {
     }
 }
 
-class Sedan extends Car {
+class Sedan extends AbstractCar {
     public void fuelType() {
         System.out.println("This car's fuel type is Diesel!");
     }
@@ -20,7 +20,7 @@ class Sedan extends Car {
 
 public class Prac_4 {
     public static void main(String[] args) {
-        Car c = new Sedan();
+        AbstractCar c = new Sedan();
         c.start();
         c.fuelType();
     }
